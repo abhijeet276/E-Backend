@@ -2,12 +2,12 @@
   "name": "e-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pm2 start ecosystem.config.json --no-daemon",
     "start-daemon": "pm2 start ecosystem.config.json",
-    "dev": "cross-env NODE_ENV=test nodemon --inspect src/index.js"
+    "dev": "cross-env NODE_ENV=test nodemon src/index.js"
   },
   "author": "",
   "license": "ISC",
