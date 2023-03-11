@@ -10,7 +10,7 @@ const envVarsSchema = Joi.object()
       .valid("production", "development", "test")
       .required(),
     PORT: Joi.number().default(3000),
-    MONGODB_URL: Joi.string().required().description("mongo db url"),
+    MONGODB_URL: Joi.string().required().description("Mongo DB url"),
     JWT_SECRET: Joi.string().required().description("ahijeet"),
     JWT_ACCESS_EXPIRATION_MINUTES: Joi.number().default(30).description("1m"),
     JWT_REFRESH_EXPIRATION_DAYS: Joi.number().default(30).description("5d"),
